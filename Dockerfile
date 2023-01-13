@@ -1,4 +1,4 @@
-FROM amazoncorretto:1.8-alpine-jdk
-MAINTAINER tunombre_o_alias
-COPY target/NAME-YOUR-FILE-BUILD-SPRINGBOOT.jar NAME-YOUR-FILE-BUILD-SPRINGBOOT.jar
-ENTRYPOINT ["java","-jar","/NAME-YOUR-FILE-BUILD-SPRINGBOOT.jar"]
+FROM java:8-jdk
+MAINTAINER Freddy Marroquin freddyandresmarroquin@gmail.com
+COPY target/fam-0.0.1-SNAPSHOT.jar fam-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","/fam-0.0.1-SNAPSHOT.jar"]
