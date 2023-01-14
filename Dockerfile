@@ -1,4 +1,4 @@
-FROM openjdk:8
-MAINTAINER Freddy Marroquin freddyandresmarroquin@gmail.com
-COPY target/fam-0.0.1-SNAPSHOT.jar fam-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java","-jar","/fam-0.0.1-SNAPSHOT.jar"]
+FROM amazoncorretto:11-alpine-jdk
+MAINTAINER FAM
+COPY target/fam-0.0.1-SNAPSHOT.jar fam-app.jar
+ENTRYPOINT ["java","-jar","/fam-app.jar"]
