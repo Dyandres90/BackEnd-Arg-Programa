@@ -12,13 +12,17 @@ public class Proyecto {
     private int id;
     private String nombreP;
     private String descripcionP;
+    private String fechaInicioP;
+    private String fechaFinP;
 
     public Proyecto() {
     }
 
-    public Proyecto(String nombreP, String descripcionP) {
+    public Proyecto(String nombreP, String descripcionP, String fechaInicioP, String fechaFinP) {
         this.nombreP = nombreP;
         this.descripcionP = descripcionP;
+        this.fechaInicioP = fechaInicioP;
+        this.fechaFinP = fechaFinP;
     }
 
     public int getId() {
@@ -44,4 +48,20 @@ public class Proyecto {
     public void setDescripcionP(String descripcionP) {
         this.descripcionP = descripcionP;
     }    
+    
+    public String getFechaInicioP() {
+        return fechaInicioP;
+    }
+
+    public void setFechaInicioP(String fechaInicioP) {
+        this.fechaInicioP = fechaInicioP;
+    }
+    
+    public String getFechaFinP() {
+        return fechaFinP;
+    }
+
+    public void setFechaFinP(String fechaFinP) {
+        this.fechaFinP = fechaFinP;
+    }
 }

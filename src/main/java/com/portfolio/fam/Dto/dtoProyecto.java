@@ -7,13 +7,19 @@ public class dtoProyecto {
     private String nombreP;
     @NotBlank
     private String descripcionP;
+    @NotBlank
+    private String fechaInicioP;
+    @NotBlank
+    private String fechaFinP;
 
     public dtoProyecto() {
     }
 
-    public dtoProyecto(String nombreP, String descripcionP) {
+    public dtoProyecto(String nombreP, String descripcionP, String fechaInicioP, String fechaFinP) {
         this.nombreP = nombreP;
         this.descripcionP = descripcionP;
+        this.fechaInicioP = fechaInicioP;
+        this.fechaFinP = fechaFinP;
     }
 
     public String getNombreP() {
@@ -30,5 +36,21 @@ public class dtoProyecto {
 
     public void setDescripcionP(String descripcionP) {
         this.descripcionP = descripcionP;
-    }    
+    }   
+    
+    public String getFechaInicioP() {
+        return fechaInicioP;
+    }
+
+    public void setFechaInicioP(String fechaInicioP) {
+        this.fechaInicioP = fechaInicioP;
+    }  
+    
+    public String getFechaFinP() {
+        return fechaFinP;
+    }
+
+    public void setFechaFinP(String fechaFinP) {
+        this.fechaFinP = fechaFinP;
+    }  
 }
